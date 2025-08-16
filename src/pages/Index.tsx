@@ -1,13 +1,17 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { HeroSection } from '@/components/HeroSection';
+import { FeatureCard } from '@/components/FeatureCard';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="min-h-screen bg-white">
+      <div className="relative">
+        <HeroSection />
+        <div className="absolute bottom-0 right-0 z-10 max-md:relative max-md:flex max-md:justify-center max-md:mt-10">
+          <FeatureCard />
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 
